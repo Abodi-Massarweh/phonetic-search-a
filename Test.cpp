@@ -93,7 +93,7 @@ TEST_CASE("Test 6 : 1 or more letter replacements") {
     CHECK_THROWS_AS(find(text, "dayz"), std::exception);
 }
 TEST_CASE("Test 7") {
-    string text = "ur the dai rons ioo;
+    string text = "ur the dai rons ioo";
    CHECK(find(text, "Or") == string("ur"));
     CHECK(find(text, "OR") == string("ur"));
     CHECK(find(text, "oR") == string("ur"));
